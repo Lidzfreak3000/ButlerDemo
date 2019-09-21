@@ -1,0 +1,36 @@
+﻿@model ButlerApp.Models.Checkin
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Checkin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckinTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CheckinTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EnteredBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EnteredBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EnteredOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EnteredOn)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
